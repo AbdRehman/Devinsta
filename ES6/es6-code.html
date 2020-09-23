@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2> Output are shown on console</h2>
+<p id="display"></p>
+<script>
+
+// Sum of Arrays
+
+  let points = new Array(100);
+        for (i = 0; i < 100; i++) {
+            points[i] = i + 1;
+        }
+        const resultm = points;
+        const final = resultm.reduce(function(a, b) {
+			return a + b;
+		}); 
+        console.log(final);
+
+       // Define values of array output
+	const array1 = [1, 2, 3, 4];
+	const reducer = array1.reduce(function(a, b) {
+		return a + b;
+	});
+	console.log(reducer);
+
+
+	// Reverse string in array form 
+	const arr = ["Ali","Khan","Usman","Faisal"]
+	const result =arr.reverse(); 
+	console.log("Reversed array is : " + result );
+
+	// Reverse string
+	let reverseString = str => {
+	    const my = str.split("").reverse().join("");
+	    console.log(my);
+	    document.getElementById("display").innerHTML = (my);
+	}
+	reverseString("My name is Abdul Rehman");
+
+	(greeter) = (person) =>{
+	return "Hello," + person;
+	}
+	var user = "Abdul Rehman";
+	console.log(greeter(user));
+
+</script>
+
+</body>
+</html>
